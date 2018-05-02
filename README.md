@@ -5,6 +5,7 @@
 
 *it will allow the user to select one of the images available.*
 the program will ask the user which part they would like to select and then ask whether they want to add color or blur a part of the image. 
+
 *after selecting an image the program will automatically turn it black and white to choose the brightness or be able to choose it based on a smaller scale of shades opposed to the many colors and shades of those colors as well*
 
 *there will be an option, of course, to delete or erase any parts that they do not want to keep*
