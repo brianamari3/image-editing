@@ -6,5 +6,7 @@ Image.open("")
 
 img = np.array(Image.open("").convert ('L'))
 print(img[:2])
-img[300]
+img[300]   
+
+Image.fromarray (img[300:301])
 
