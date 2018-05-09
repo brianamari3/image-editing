@@ -2,9 +2,9 @@ import numpy as np
 from PIL import Image 
 from ipywidgets import interact 
 
-Image.open("")
+Image.open("https://images.pexels.com/photos/556416/pexels-photo-556416.jpeg?auto=compress&cs=tinysrgb&h=350")
 
-img = np.array(Image.open("").convert ('L'))
+img = np.array(Image.open("https://images.pexels.com/photos/556416/pexels-photo-556416.jpeg?auto=compress&cs=tinysrgb&h=350").convert ('L'))
 print(img[:2])
 img[300]   
 
