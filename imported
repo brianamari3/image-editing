@@ -4,3 +4,7 @@ from ipywidgets import interact
 
 Image.open("")
 
+img = np.array(Image.open("").convert ('L'))
+print(img[:2])
+img[300]
+
