@@ -2,18 +2,24 @@ import numpy as np
 from PIL import Image 
 from ipywidgets import interact 
 
-Image.open("orange_forest.png")
-
+first_pic = Image.open("orange_forest.png")
+w, h = first_pic.size
+ratio = w/h 
+scaledf_pic  = first_pic.resize((80, int(80/ratio)))
+scaledf_pic
 img = np.array(Image.open("orange_forest.png").convert ('L'))
 print(img[:2])
 img[300]   
-
 Image.fromarray (img[300:301])
 
 
 
-Image.open("railroad.jpg")
 
+second_pic = Image.open("railroad.jpg")
+w, h = second_pic.size
+ratio = w/h 
+scaleds_pic = second_pic.resize((80, int(80/ratio)))
+scaleds_pic
 img = np.array(Image.open("railroad.jpg").convert ('L'))
 print(img[:2])
 img[300]   
@@ -23,8 +29,11 @@ Image.fromarray (img[300:301])
 
 
 
-Image.open("ocean.jpg")
-
+third_pic = Image.open("ocean.jpg")
+w, h = third_pic.size 
+ratio = w/h
+scaledt_pic = third_pic.resize((80, int(80/ratio)))
+scaledt_pic
 img = np.array(Image.open("ocean.jpg").convert ('L'))
 print(img[:2])
 img[300]   
