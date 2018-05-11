@@ -2,9 +2,30 @@ import numpy as np
 from PIL import Image 
 from ipywidgets import interact 
 
-Image.open("image_editing.jpeg")
+Image.open("orange_forest.png")
 
-img = np.array(Image.open("image_editing.jpeg").convert ('L'))
+img = np.array(Image.open("orange_forest.png").convert ('L'))
+print(img[:2])
+img[300]   
+
+Image.fromarray (img[300:301])
+
+
+
+Image.open("railroad.jpg")
+
+img = np.array(Image.open("railroad.jpg").convert ('L'))
+print(img[:2])
+img[300]   
+
+Image.fromarray (img[300:301])
+
+
+
+
+Image.open("ocean.jpg")
+
+img = np.array(Image.open("ocean.jpg").convert ('L'))
 print(img[:2])
 img[300]   
 
