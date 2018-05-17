@@ -16,8 +16,7 @@ another option would be for the user to rotate the image or change the way the i
 after editing the user can choose to continue editing or choose to be done 
 once they are done they can do it again and try another image 
 
-
-
+I still need to see the other websites for more code on making it change colors and blur. 
 
 
 
