@@ -11,8 +11,10 @@ img = np.array(Image.open("orange_forest.png").convert ('L'))
 print(img[:2])
 img[300]   
 Image.fromarray (img[300:301])
-
-
+for i in range(img.size[0]): # for every pixel:
+    for j in range(img.size[1]):
+        if pixels[i,j] == (255, 0, 0):
+            pixels[i,j] = (0, 0 ,0)
 
 
 second_pic = Image.open("railroad.jpg")
@@ -23,10 +25,11 @@ scaleds_pic
 img = np.array(Image.open("railroad.jpg").convert ('L'))
 print(img[:2])
 img[300]   
-
 Image.fromarray (img[300:301])
-
-
+for i in range(img.size[0]): # for every pixel:
+    for j in range(img.size[1]):
+        if pixels[i,j] == (255, 0, 0):
+            pixels[i,j] = (0, 0 ,0)
 
 
 third_pic = Image.open("ocean.jpg")
@@ -37,6 +40,8 @@ scaledt_pic
 img = np.array(Image.open("ocean.jpg").convert ('L'))
 print(img[:2])
 img[300]   
-
 Image.fromarray (img[300:301])
-
+for i in range(img.size[0]): # for every pixel:
+    for j in range(img.size[1]):
+        if pixels[i,j] == (255, 0, 0):
+            pixels[i,j] = (0, 0 ,0)0
