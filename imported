@@ -11,8 +11,9 @@ img = np.array(Image.open("orange_forest.png").convert ('L'))
 print(img[:2])
 img[300]   
 Image.fromarray (img[300:301])
-for i in range(img.size[0]): # for every pixel:
-    for j in range(img.size[1]):
+
+for i in range(scaledf_pic[0]): # for every pixel:
+    for j in range(scaledf_pic[1]):
         if pixels[i,j] == (255, 0, 0):
             pixels[i,j] = (0, 0 ,0)
 
@@ -26,8 +27,9 @@ img = np.array(Image.open("railroad.jpg").convert ('L'))
 print(img[:2])
 img[300]   
 Image.fromarray (img[300:301])
-for i in range(img.size[0]): # for every pixel:
-    for j in range(img.size[1]):
+
+for i in range(scaleds_pic[0]): # for every pixel:
+    for j in range(scaleds_pic[1]):
         if pixels[i,j] == (255, 0, 0):
             pixels[i,j] = (0, 0 ,0)
 
@@ -41,7 +43,8 @@ img = np.array(Image.open("ocean.jpg").convert ('L'))
 print(img[:2])
 img[300]   
 Image.fromarray (img[300:301])
-for i in range(img.size[0]): # for every pixel:
-    for j in range(img.size[1]):
+
+for i in range(scaledt_pic[0]): # for every pixel:
+    for j in range(scaledt_pic[1]):
         if pixels[i,j] == (255, 0, 0):
             pixels[i,j] = (0, 0 ,0)0
