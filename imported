@@ -5,14 +5,14 @@ from ipywidgets import interact
 class Image: 
     def pick(self): 
         image_selecting = int(input("choose image 1, 2, or 3: "))
-        if n not in range(1, 3):
+        if image_selecting not in range(1, 3):
         raise ValueError
-first_pic = Image.open("orange_forest.png")
+first_pic = Image.open("pexels-photo.jpg")
 w, h = first_pic.size
 ratio = w/h 
 scaledf_pic  = first_pic.resize((80, int(80/ratio)))
 scaledf_pic
-img = np.array(Image.open("orange_forest.png").convert ('L'))
+img = np.array(Image.open("pexels-photo.jpg").convert ('L'))
 print(img[:2])
 img[300]   
 Image.fromarray (img[300:301])
@@ -23,12 +23,12 @@ for i in range(scaledf_pic[0]): # for every pixel:
             pixels[i,j] = (0, 0 ,0)
 
 
-second_pic = Image.open("railroad.jpg")
+second_pic = Image.open("Wallpaper-10.jpg")
 w, h = second_pic.size
 ratio = w/h 
 scaleds_pic = second_pic.resize((80, int(80/ratio)))
 scaleds_pic
-img = np.array(Image.open("railroad.jpg").convert ('L'))
+img = np.array(Image.open("Wallpaper-10.jpg").convert ('L'))
 print(img[:2])
 img[300]   
 Image.fromarray (img[300:301])
@@ -39,12 +39,12 @@ for i in range(scaleds_pic[0]): # for every pixel:
             pixels[i,j] = (0, 0 ,0)
 
 
-third_pic = Image.open("ocean.jpg")
+third_pic = Image.open("Gull_portrait_ca_usa.jpg")
 w, h = third_pic.size 
 ratio = w/h
 scaledt_pic = third_pic.resize((80, int(80/ratio)))
 scaledt_pic
-img = np.array(Image.open("ocean.jpg").convert ('L'))
+img = np.array(Image.open("Gull_portrait_ca_usa.jpg").convert ('L'))
 print(img[:2])
 img[300]   
 Image.fromarray (img[300:301])
