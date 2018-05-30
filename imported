@@ -57,4 +57,4 @@ Image.fromarray (img[300:301])
 for i in range(scaledt_pic[0]): # for every pixel:
     for j in range(scaledt_pic[1]):
         if pixels[i,j] == (255, 0, 0):
-            pixels[i,j] = (0, 0 ,0)0
+            pixels[i,j] = (0, 0 ,0)
