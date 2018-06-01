@@ -22,10 +22,8 @@ print(img[:2])
 img[300]   
 Image.fromarray (img[300:301])
 
-for i in range(scaledf_pic[0]): # for every pixel:
-    for j in range(scaledf_pic[1]):
-        if pixels[i,j] == (255, 0, 0):
-            pixels[i,j] = (0, 0 ,0)
+plt.imshow(f[320:340, 510:530], cmap=plt.cm.gray, interpolation='bilinear')        
+plt.imshow(f[320:340, 510:530], cmap=plt.cm.gray, interpolation='nearest')               
 
 
 second_pic = Image.open("Wallpaper-10.jpg")
@@ -37,11 +35,8 @@ img = np.array(Image.open("Wallpaper-10.jpg").convert ('L'))
 print(img[:2])
 img[300]   
 Image.fromarray (img[300:301])
-
-for i in range(scaleds_pic[0]): # for every pixel:
-    for j in range(scaleds_pic[1]):
-        if pixels[i,j] == (255, 0, 0):
-            pixels[i,j] = (0, 0 ,0)
+plt.imshow(f[320:340, 510:530], cmap=plt.cm.gray, interpolation='bilinear')        
+plt.imshow(f[320:340, 510:530], cmap=plt.cm.gray, interpolation='nearest')            
 
 
 third_pic = Image.open("Gull_portrait_ca_usa.jpg")
@@ -54,7 +49,7 @@ print(img[:2])
 img[300]   
 Image.fromarray (img[300:301])
 
-for i in range(scaledt_pic[0]): # for every pixel:
-    for j in range(scaledt_pic[1]):
-        if pixels[i,j] == (255, 0, 0):
-            pixels[i,j] = (0, 0 ,0)
+plt.imshow(f[320:340, 510:530], cmap=plt.cm.gray, interpolation='bilinear')        
+plt.imshow(f[320:340, 510:530], cmap=plt.cm.gray, interpolation='nearest')        
+
+
